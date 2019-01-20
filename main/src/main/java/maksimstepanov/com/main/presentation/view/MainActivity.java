@@ -24,6 +24,7 @@ public class MainActivity extends BaseActivity {
         subComponent.inject(this);
 
         Log.d("TAG", presenter.getName());
+        presenter.doSomeJobWithInteractor();
     }
 
     @Override
