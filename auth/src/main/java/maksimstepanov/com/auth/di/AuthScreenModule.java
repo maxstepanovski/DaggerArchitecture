@@ -1,7 +1,8 @@
-package maksimstepanov.com.auth;
+package maksimstepanov.com.auth.di;
 
 import dagger.Module;
 import dagger.Provides;
+import maksimstepanov.com.auth.AuthActivityPresenter;
 import maksimstepanov.com.core.di.Screen;
 
 @Module
