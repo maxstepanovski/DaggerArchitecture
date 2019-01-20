@@ -6,6 +6,10 @@ import maksimstepanov.com.auth.di.AuthScreenModule;
 import maksimstepanov.com.cache.CacheModule;
 import maksimstepanov.com.core.di.ScreenSubComponent;
 import maksimstepanov.com.core.di.ScreenSubComponentProvider;
+import maksimstepanov.com.daggerarchitecture.di.AppComponent;
+import maksimstepanov.com.daggerarchitecture.di.AppModule;
+import maksimstepanov.com.daggerarchitecture.di.DaggerAppComponent;
+import maksimstepanov.com.main.di.MainScreenModule;
 import maksimstepanov.com.network.di.NetworkModule;
 
 
@@ -29,5 +33,10 @@ public class ArchApp extends Application implements ScreenSubComponentProvider {
     @Override
     public ScreenSubComponent getAuthScreenSubComponent() {
         return instance.getAuthScreenSubComponent(new AuthScreenModule());
+    }
+
+    @Override
+    public ScreenSubComponent getMainScreenSubComponent() {
+        return instance.getMainScreenSubComponent(new MainScreenModule());
     }
 }

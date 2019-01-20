@@ -1,6 +1,8 @@
 package maksimstepanov.com.auth;
 
-public class AuthActivityPresenter {
+import maksimstepanov.com.core.presentation.presenter.BasePresenter;
+
+public class AuthActivityPresenter extends BasePresenter {
     private String name;
 
     public AuthActivityPresenter() {

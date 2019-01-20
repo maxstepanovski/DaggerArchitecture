@@ -1,1 +1,1 @@
-include ':app', ':core', ':network', ':cache', ':auth'
+include ':app', ':core', ':network', ':cache', ':auth', ':main', ':somefeature'
