@@ -22,6 +22,8 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
     implementation project(':auth')
+    implementation project(':network')
+    implementation project(':cache')
     implementation project(':core')
 
     implementation 'com.google.dagger:dagger-android:2.20'

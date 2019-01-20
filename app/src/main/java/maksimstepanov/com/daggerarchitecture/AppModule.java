@@ -1,4 +1,4 @@
-package maksimstepanov.com.core.di;
+package maksimstepanov.com.daggerarchitecture;
 
 import android.content.Context;
 
